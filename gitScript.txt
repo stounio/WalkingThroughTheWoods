@@ -1,0 +1,10 @@
+git init
+git config user.name "Your name"
+git config user.email "Your email"
+vim readme.txt
+git add .
+git commit -m "Message for my commit"
+git log
+vim .gitignore
+git add .gitignore
+

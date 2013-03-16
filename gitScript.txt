@@ -13,4 +13,6 @@ git checkout branchName
 git checkout -b branchName
 git rebase upstream branchName
 git stash
+git stash show
+git stash pop
 git log --graph --oneline --all

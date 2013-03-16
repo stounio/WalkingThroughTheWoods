@@ -11,3 +11,4 @@ git branch
 git branch branchName
 git checkout branchName
 git checkout -b branchName
+git rebase upstream branchName

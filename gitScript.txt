@@ -16,3 +16,4 @@ git stash
 git stash show
 git stash pop
 git log --graph --oneline --all
+git cherry-pick SHA1

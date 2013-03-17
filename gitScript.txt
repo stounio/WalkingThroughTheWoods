@@ -24,3 +24,15 @@ git reset
 git reset --hard
 git clean -f
 git clean -d -f
+
+Publishing a branch on gitHub:
+1- Create an empty repository on gitHub in order to define a valid URL for the repository
+2- Configure the local repository to track the remote branch 'origin':
+	git config remote.origin.url git@gitHub.com:stounio/WalkingThroughTheWoods.git
+	git config remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+3- Configure the local repository to associate the local branch 'master' with the remote branch 'origin':
+	git config branch.master.remote origin
+	git config branch.master.merge refs/heads/master
+4- Publish the branch 'master' on the repository on gitHub:
+	git push origin master
+ 

@@ -1,1 +1,1 @@
-This is the story of my life.
+This is about learning git by writing stories.

@@ -19,3 +19,4 @@ git log --graph --oneline --all
 git cherry-pick SHA1
 git merge --no-commit branchName
 git branch -d branchName
+git revert SHA1

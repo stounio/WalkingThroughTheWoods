@@ -1,31 +1,33 @@
-git init
-git config user.name "Your name"
-git config user.email "Your email"
-vim readme.txt
-git add .
-git commit -m "Message for my commit"
-git log
-vim .gitignore
-git add .gitignore
-git branch
-git branch branchName
-git checkout branchName
-git checkout -b branchName
-git rebase upstream branchName
-git stash
-git stash show
-git stash pop
-git log --graph --oneline --all
-git cherry-pick SHA1
-git merge --no-commit branchName
-git branch -d branchName
-git revert SHA1
-git reset
-git reset --hard
-git clean -f
-git clean -d -f
+Working with git on a local repository:
+
+git init					Initialises a local repository.
+git config user.name "Your name"		Defines the user name that will be used in each commit.
+git config user.email "Your email"		Defines the user email that will be used in each commit.				
+git add .					Stages modified and new files from the working directory to the index. 
+git commit -m "Message for my commit"		Commits the files staged in the index to the repository by providing a message. 
+git log						Displays the history of the commits for the  current branch
+git add .gitignore				Stages the '.gitignore' configuration file that specifies the directories and files that should not be manage by git in the repository.
+git branch					Displays the list of the local branches.
+git branch -a					Displays the list of all branches including the remote branches.
+git branch branchName				Creates a new branch by providing a name.
+git checkout branchName				Switches to a different branch by providing a name.
+git checkout -b branchName			Creates and switches to the new branch.
+git rebase upstream branchName			Rebases the current branch or the specified branch with the upstream branch.
+git stash					Hides all the modification in the working directory and the index in a stash.
+git stash show					Displays all the stashes.
+git stash pop					Retrieves the content of the working directory and the index previously hidden in a stash.
+git log --graph --oneline --all			Display the history of the repository as a graph.
+git cherry-pick SHA1				Retrieves the content of a commit and apply it to the current branch using the commit SHA1.
+git merge --no-commit branchName		Merges a branch to the current branch without commiting. 
+git branch -d branchName			Deletes a branch for which the content exists in some other branches on the repository.
+git revert SHA1					Reverts a commit identified by its SHA1 by applying a negative commit.
+git reset					Resets the content of the index.
+git reset --hard				Resets the content of the index and of the working directory.
+git clean -f					Deletes untracked files from the working directory.
+git clean -d -f					Deletes intracked directories and file from the working directory.
 
 Publishing a branch on gitHub:
+
 1- Create an empty repository on gitHub in order to define a valid URL for the repository
 2- Configure the local repository to track the remote branch 'origin':
 	git config remote.origin.url git@gitHub.com:stounio/WalkingThroughTheWoods.git

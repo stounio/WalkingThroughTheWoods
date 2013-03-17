@@ -25,6 +25,7 @@ git reset					Resets the content of the index.
 git reset --hard				Resets the content of the index and of the working directory.
 git clean -f					Deletes untracked files from the working directory.
 git clean -d -f					Deletes intracked directories and file from the working directory.
+git tag tagName					Tags the current branch.
 
 Publishing a branch on gitHub:
 

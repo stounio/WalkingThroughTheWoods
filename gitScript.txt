@@ -38,4 +38,9 @@ Publishing a branch on gitHub:
 	git config branch.master.merge refs/heads/master
 4- Publish the branch 'master' on the repository on gitHub:
 	git push origin master
- 
+5- Pushing a tag on the repository on gitHub:
+	git push --tags origin master5- Pushing a tag on the repository on gitHub:
+	git push --tags origin master5- Pushing a tag on the repository on gitHub:
+	git push --tags origin master5- Pushing a tag on the repository on gitHub:
+	git push --tags origin master5- Pushing a tag on the repository on gitHub:
+	git push --tags origin master 

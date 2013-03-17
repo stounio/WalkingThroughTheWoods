@@ -22,4 +22,5 @@ git branch -d branchName
 git revert SHA1
 git reset
 git reset --hard
+git clean -f
 

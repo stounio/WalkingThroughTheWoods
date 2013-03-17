@@ -23,4 +23,4 @@ git revert SHA1
 git reset
 git reset --hard
 git clean -f
-
+git clean -d -f

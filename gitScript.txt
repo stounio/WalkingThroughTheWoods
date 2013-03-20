@@ -1,3 +1,6 @@
+Configuring git to use SSH:
+ssh-keygen -t rsa			Generates the private and public SSH keys in a '.ssh' directory under your user home directory. The public SSH key should be added to your profile on gitHub.
+
 Working with git on a local repository:
 
 git init					Initialises a local repository.

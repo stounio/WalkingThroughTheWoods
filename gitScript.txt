@@ -46,4 +46,8 @@ Publishing a branch on gitHub:
 	git push --tags origin master5- Pushing a tag on the repository on gitHub:
 	git push --tags origin master5- Pushing a tag on the repository on gitHub:
 	git push --tags origin master5- Pushing a tag on the repository on gitHub:
-	git push --tags origin master 
+	git push --tags origin master
+6- Fetch modification from a remote branch (requires to rebase the local branch to take the modification into account)
+	git fetch origin master
+7- Pull modification from a remote branch and rebase the local branch
+	git pull origin master
